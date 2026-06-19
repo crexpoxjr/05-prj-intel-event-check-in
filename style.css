@@ -317,6 +317,17 @@ select {
   margin-bottom: 20px;
 }
 
+.celebration-message {
+  background: linear-gradient(90deg, #e8f7fc, #f0fdf4);
+  color: #003c71;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .teams-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -329,6 +340,7 @@ select {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Team card colors */
@@ -342,10 +354,59 @@ select {
   background-color: #fff7ed;
 }
 
+.team-card.leader {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 2px #0071c5 inset;
+}
+
 .team-name {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+.attendee-list-section {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.attendee-list-section h4 {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.attendee-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendee-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.attendee-name {
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.attendee-team {
+  background: #e8f7fc;
+  color: #0071c5;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
 }
 
 /* Mobile responsive */
